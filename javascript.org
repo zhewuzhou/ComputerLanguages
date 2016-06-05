@@ -1,0 +1,5 @@
+* AngularJs
+- [[https://github.com/angular/angular.js/wiki/Understanding-Scopes][scope]]
+* General Rules
+- Don't ever download a repo and do npm install or start a whole new project from scratch, npm ecosystem will kill you !!!!
+- Instead you could use CodePan or something else to do the job and make thing simpler.

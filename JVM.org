@@ -1,0 +1,3 @@
+* Why JVM can not hotswap a whole new class?
+* What's java managed resources as well as dotnet? How they works?
+* Best JVM articles/papers?

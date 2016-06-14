@@ -1,0 +1,17 @@
+** DONE what's generator in program
+CLOSED: [2016-06-14 Tue 13:16]
+*** generators are iterators but not reverse, generate value when needed [[https://www.quora.com/Programming-Languages-What-are-generators/answer/Costya-Perepelitsa?srid=z8Tr][quora]]
+*** Benefit
+- save memory
+- easy to keep implementation nice and generic, because there is no need to guess the bounds
+*** Costs
+- computation only when you need, this is not effective for CPU because context switch as a result CPU cache missing
+- Hurt the compiler from optimization, it's can not do optimization for something which don't know the time execution
+- If it's really expensive to generate the next value, do it pre-fill
+*** DONE what's the relationship between lazy evaluation and generators
+CLOSED: [2016-06-14 Tue 13:12]
+- generators are one type of lazy evaluation
+- it's just implemented with thunks the compiler helps you hold the context and evaluate when needed
+- see the [[https://www.quora.com/How-is-lazy-evaluation-implemented-in-functional-programming-languages/answer/Costya-Perepelitsa?srid=z8Tr][quora]]
+*** Call by name(lazy) VS call by value
+*** The essence of the lazy evaluation is to hold the context for now with the help of runtime, evaluate later
